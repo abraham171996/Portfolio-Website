@@ -1,0 +1,115 @@
+#first {
+  padding: 42px 0;
+  .first-left {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    .skills {
+      width: 415px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 23px;
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      .title {
+        h3 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: uppercase;
+          color: #4f4f4f;
+        }
+      }
+      &-boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &--box {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .bottom {
+            background: #c4c4c4;
+            border-radius: 12px;
+            width: 236.85px;
+            height: 9.6px;
+            position: relative;
+            .top {
+              background: #2f80ed;
+              border-radius: 12px;
+              width: 155.77px;
+              height: 9.6px;
+              position: absolute;
+            }
+            .js {
+              width: 198.44px;
+            }
+            .css,
+            .sass,
+            .html {
+              width: 218.71px;
+            }
+            .bootstrap {
+              width: 140px;
+            }
+          }
+        }
+      }
+    }
+    .hobbies {
+      background: #ffffff;
+      border-radius: 12px;
+      width: 415px;
+      display: flex;
+      flex-direction: column;
+      padding: 22px;
+      gap: 26px;
+      .title {
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          color: #4f4f4f;
+        }
+      }
+      &-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        &--card {
+          figure {
+            img {
+              border-radius: 12px;
+              width: 379.66px;
+              height: 139px;
+              object-fit: cover;
+            }
+          }
+          h4 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+            margin-top: 26px;
+          }
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #828282;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
