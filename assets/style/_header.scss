@@ -112,12 +112,12 @@ header {
     }
   }
   }
-  #first{
-    justify-content: center;
-    align-items: center;
-  }
+  
 }
 @media(max-width:768px){
+  body{
+    padding: 70px 50px 24px 50px;
+  }
   #first{
     .first-right{
       justify-content: center;
@@ -136,5 +136,55 @@ header {
        }
       }
     }
+  }
+}
+
+@media(max-width: 480px){
+  body{
+    padding: 70px 20px 24px 20px;
+  }
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .personal-info{
+        max-width: 300px;
+        &--left{
+          figure{
+            img{
+              width: 200px;
+              height: 200px;
+            }
+          }
+        }
+        &--right{
+          &--bottom{
+            p{
+              font-size: 14px ;
+            }
+          }
+        }
+      }
+      .name-position{
+        h2{
+          font-size: 18px !important;
+        }
+        span{
+          font-size: 14px !important;
+        }
+      }
+      .contact-link{
+        span{
+          font-size: 14px !important;
+        }
+        a{
+          font-size: 10px !important;
+        }
+      }
+    }
+}
+@media(max-width: 320px){
+  .personal-info{
+    width: 250px ;
   }
 }

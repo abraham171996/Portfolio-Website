@@ -188,7 +188,7 @@
     }
     .experiences {
       max-width: 592px;
-      
+
       background: #ffffff;
       border-radius: 12px;
       padding: 31px 17px 90px 17px;
@@ -227,7 +227,6 @@
               font-size: 14px;
               line-height: 17px;
               color: #828282;
-              
             }
             h4 {
               font-family: "Montserrat";
@@ -237,7 +236,6 @@
               line-height: 20px;
               color: #333333;
               margin-top: 12px;
-             
             }
             .special {
               font-family: "Montserrat";
@@ -250,8 +248,152 @@
             }
           }
         }
-        
       }
     }
   }
+}
+
+@media (max-width: 1024px) {
+  #first {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  #first {
+    .first-right {
+      justify-content: center;
+      align-items: center;
+      .experiences {
+        max-width: 415px !important;
+        justify-content: center;
+        align-items: center;
+        &-bottom {
+          .box {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+      }
+      .blog {
+        width: 415px;
+        padding: 32px;
+        &-top {
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+        }
+        &-bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .first-left {
+    justify-content: center;
+    align-items: center;
+  }
+  .skills {
+    justify-content: center;
+    align-items: center;
+    max-width: 300px !important;
+    padding: 23px 57px !important;
+    &-boxes {
+      &--box {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+  .hobbies {
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    .title{
+      h2{
+        font-size: 18px !important;
+      }
+    }
+    &-cards {
+      &--card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        figure{
+          img{
+            width: 200px !important;
+          }
+        }
+        h4{
+          font-size: 14px !important;
+        }
+        p{
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+  .blog{
+    width: 300px !important;
+    &-top{
+      figure{
+        img{
+          width: 200px !important;
+          height: 200px !important;
+        }
+      }
+      .title{
+        p{
+          font-size: 12px !important;
+        }
+        h2{
+          font-size: 18px !important;
+        }
+      }
+    }
+    &-bottom{
+      p{
+        font-size: 12px !important;
+      }
+    }
+  }
+  .experiences{
+    width: 300px;
+    h2{
+      font-size: 18px !important;
+    }
+    img{
+      width: 100px !important;
+    }
+    p,h4{
+      font-size: 12px !important;
+    }
+  }
+}
+@media (max-width: 320px){
+    .skills{
+      width: 250px !important;
+      padding: 20px;
+    }
+    .hobbies{
+      width: 250px !important;
+    }
+    .blog{
+      width: 250px !important;
+    }
+    .experiences{
+      width: 250px !important;
+    }
 }
