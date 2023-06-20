@@ -126,6 +126,14 @@ header {
        max-width: 415px !important;
        justify-content: center;
        align-items: center;
+       &-bottom{
+        .box{
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+       }
       }
     }
   }
