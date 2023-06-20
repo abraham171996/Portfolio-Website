@@ -25,7 +25,7 @@
 #carts{
     margin-top: 35px;
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     .cart{
         width: 330px;
         height: 560px;
@@ -66,4 +66,7 @@ footer{
     margin-top: 240px;
     margin-bottom: 25px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
