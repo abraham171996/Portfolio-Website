@@ -33,10 +33,7 @@
         flex-direction: column;
         gap: 20px;
         &--box {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
+          
           span{
             @include parStyle;
             @include linkColor
@@ -167,7 +164,7 @@
 
       background: #ffffff;
       border-radius: 12px;
-      padding: 31px 17px 90px 17px;
+      padding: 31px 17px 155px 17px;
       display: flex;
       flex-direction: column;
       gap: 44px;
