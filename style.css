@@ -18,6 +18,26 @@
   width: 85px;
   height: 35px;
   margin-top: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#projects div:nth-child(1) .frameworks button:hover {
+  background-color: #2f80ed;
+  border: none;
+  color: #fff;
+  transform: scale(1.05);
+}
+#projects div:nth-child(1) .frameworks button:hover a {
+  color: #fff;
+}
+#projects div:nth-child(1) .frameworks button a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4f4f4f;
 }
 
 #carts {
@@ -41,24 +61,38 @@
   margin-top: 25px;
 }
 #carts .cart .tag span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
   margin: 0px 10px;
 }
 #carts .cart .title {
   margin: 20px 0;
+}
+#carts .cart .title h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+#carts .cart .desc p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
 }
 #carts .cart .btns {
   margin-top: 45px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-}
-#carts .cart .btns .demo {
-  width: 135px;
-  height: 45px;
-  background-color: #2f80ed;
-  border-radius: 12px;
-  border: none;
-  color: #fff;
 }
 #carts .cart .btns .code {
   width: 135px;
@@ -67,6 +101,25 @@
   background-color: #fff;
   border: 1px solid #2f80ed;
   border-radius: 12px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#carts .cart .btns .code:hover {
+  background-color: #2f80ed;
+  color: #fff;
+  transform: scale(1.05);
+  border: none;
+}
+#carts .cart .btns .code:hover a {
+  color: #fff;
+}
+#carts .cart .btns a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2f80ed;
 }
 
 footer {
@@ -77,7 +130,22 @@ footer {
   justify-content: center;
   align-items: center;
 }
+footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
 
+@media (max-width: 1024px) {
+  #carts {
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 768px) {
   #carts {
     justify-content: center;
@@ -114,9 +182,19 @@ footer {
     width: 50px !important;
     font-size: 9px;
   }
+  .frameworks button a {
+    font-size: 10px !important;
+  }
   .btns {
     justify-content: center;
     align-items: center;
+  }
+  .btns .code {
+    width: 80px !important;
+    height: 30px !important;
+  }
+  .btns .code a {
+    font-size: 14px !important;
   }
 }
 @media (max-width: 320px) {
