@@ -90,3 +90,43 @@ header {
     }
   }
 }
+
+@media(max-width:1024px){
+  header{
+  .personal-info{
+    align-items: center;
+    flex-wrap: wrap;
+    &--right{
+      &--top{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .contact-link{
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+  }
+  #first{
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(max-width:768px){
+  #first{
+    .first-right{
+      justify-content: center;
+      align-items: center;
+      .experiences{
+       max-width: 415px !important;
+       justify-content: center;
+       align-items: center;
+      }
+    }
+  }
+}
